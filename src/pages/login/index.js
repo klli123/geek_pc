@@ -1,8 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { Card } from 'antd'
+import './index.css'
+import logo from '../../assets/logo.png'
 
 export default class Login extends React.Component {
     render() {
-        return <div>登录组件</div>
+        return (<div className='login'>
+            <Card className='login-container'>
+                <img src={logo} alt="" className='login-logo' />
+            </Card></div>)
     }
 }
